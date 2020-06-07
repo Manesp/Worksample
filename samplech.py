@@ -28,7 +28,7 @@ if int(acc) == 1 : #Upload
     print("Subido.") # Informamos al usuario que la acción se realizó
 elif int(acc) == 2 : #Download
     file = input(str("ingrese archivo que desea descargar: ")) # Pedimos el nombre del archivo a bajar
-    s3.Bucket(nbucket).download_file(file,"manu")
+    s3.Bucket(nbucket).download_file(file,"default")
     print("Descargado.") # Informamos al usuario que la acción se realizó
 else :
     print("Sale del programa.")
